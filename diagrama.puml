@@ -1,9 +1,40 @@
 @startuml
-class Pacman
-class Fantasma
-class Fruta
-class Personaje 
-Pacman --|> Personaje
-
-
+class Eri
+class Fio
+class Ralf
+class Moneda
+class Posion
+class Botiquin
+class CajaF
+class CajaS
+class CajaR
+class Personaje
+class Item
+Eri --|> Personaje
+Eri o-- Moneda
+Eri o-- Posion
+Eri o-- Botiquin
+Eri o-- CajaF
+Eri o-- CajaS
+Eri o-- CajaR
+Fio --|> Peronaje
+Fio o-- Moneda
+Fio o-- Posion
+Fio o-- Botiquin
+Fio o-- CajaF
+Fio o-- CajaS
+Fio o-- CajaR
+Ralf --|> Personaje
+Ralf o-- Moneda
+Ralf o-- Posion
+Ralf o-- Botiquin
+Ralf o-- CajaF
+Ralf o-- CajaS
+Ralf o-- CajaR
+Item --|> Moneda
+Item --|> Posion
+Item --|> Botiquin
+Item --|> CajaF
+Item --|> CajaS
+Item --|> CajaR
 @enduml
