@@ -1,40 +1,162 @@
 @startuml
-class Eri
-class Fio
-class Ralf
+class Eri {
++ Recoger (Item)
++ Disparar ()
+}
+class Fio {
++ Recoger (Item)
++ Disparar()
+}
+class Vida
 class Moneda
 class Posion
 class Botiquin
+class Item
+class Personaje
 class CajaF
 class CajaS
 class CajaR
-class Personaje
-class Item
+class CajaH 
+class CajaL 
+class CajaC 
+class CajaI 
+class CajaD 
+class CajaG 
+class Caja2H 
+class CajaZ 
+class CajaT 
+class CajaB 
+class ThunderCloud
+class Roca 
+class Granada
+class FireBomb
+class Misiles 
+class Dron 
+class Montura 
+class Tanque
+class Androide 
+class Camello 
+class Avion 
+class Submarino
+class Vehículo
+class Elefante 
+class Taladro 
+class Prisionero 
+class Comida 
+class Medalla
+class Tanquedegasolina
+class CajasdeMunicion 
 Eri --|> Personaje
-Eri o-- Moneda
+Eri *-- "2" Vida
+Eri o-- "1..*" Moneda
 Eri o-- Posion
 Eri o-- Botiquin
 Eri o-- CajaF
 Eri o-- CajaS
 Eri o-- CajaR
+Eri o-- CajaH 
+Eri o-- CajaL 
+Eri o-- CajaC 
+Eri o-- CajaI 
+Eri o-- CajaD 
+Eri o-- CajaG 
+Eri o-- Caja2H 
+Eri o-- CajaZ 
+Eri o-- CajaT 
+Eri o-- CajaB 
+Eri o-- "1..2" ThunderCloud
+Eri o-- "1..5" Roca 
+Eri o-- "1..3" Granada
+Eri o-- "1..3" FireBomb
+Eri o-- "1..4" Misiles 
+Eri o-- Dron 
+Eri o-- Montura 
+Eri o-- Tanque
+Eri o-- Androide 
+Eri o-- Camello 
+Eri o-- Avion 
+Eri o-- Submarino
+Eri o-- Vehículo
+Eri o-- Elefante 
+Eri o-- Taladro 
+Eri o-- "1..*"  Prisionero 
+Eri o-- "1..*"  Comida 
+Eri o-- "1..*"  Medalla
+Eri o-- "1..3"  Tanquedegasolina
+Eri o-- "1..*"  CajasdeMunicion 
 Fio --|> Peronaje
-Fio o-- Moneda
+Fio *-- "2" Vida
+Fio o-- "1..*" Moneda
 Fio o-- Posion
 Fio o-- Botiquin
 Fio o-- CajaF
 Fio o-- CajaS
 Fio o-- CajaR
-Ralf --|> Personaje
-Ralf o-- Moneda
-Ralf o-- Posion
-Ralf o-- Botiquin
-Ralf o-- CajaF
-Ralf o-- CajaS
-Ralf o-- CajaR
-Item --|> Moneda
-Item --|> Posion
-Item --|> Botiquin
-Item --|> CajaF
-Item --|> CajaS
-Item --|> CajaR
+Fio o-- CajaH 
+Fio o-- CajaL 
+Fio o-- CajaC 
+Fio o-- CajaI 
+Fio o-- CajaD 
+Fio o-- CajaG 
+Fio o-- Caja2H 
+Fio o-- CajaZ 
+Fio o-- CajaT 
+Fio o-- CajaB 
+Fio o-- "1..2" ThunderCloud
+Fio o-- "1..5" Roca 
+Fio o-- "1..3" Granada
+Fio o-- "1..3" FireBomb
+Fio o-- "1..4" Misiles 
+Fio o-- Dron 
+Fio o-- Montura 
+Fio o-- Tanque
+Fio o-- Androide 
+Fio o-- Camello 
+Fio o-- Avion 
+Fio o-- Submarino
+Fio o-- Vehículo
+Fio o-- Elefante 
+Fio o-- Taladro 
+Fio o-- "1..*"  Prisionero 
+Fio o-- "1..*"  Comida 
+Fio o-- "1..*"  Medalla
+Fio o-- "1..3"  Tanquedegasolina
+Fio o-- "1..*"  CajasdeMunicion 
+Moneda --|> Item
+Posion --|> Item
+Botiquin --|> Item
+Personaje --|> Item
+CajaF --|> Item
+CajaS --|> Item
+CajaR --|> Item
+CajaH --|> Item
+CajaL --|> Item
+CajaC --|> Item
+CajaI --|> Item
+CajaD --|> Item
+CajaG --|> Item
+Caja2H --|> Item
+CajaZ --|> Item
+CajaT --|> Item
+CajaB --|> Item
+ThunderCloud --|> Item
+Roca --|> Item
+Granada --|> Item
+FireBomb --|> Item
+Misiles --|> Item
+Dron --|> Item
+Montura --|> Item
+Tanque --|> Item
+Androide --|> Item
+Camello --|> Item
+Avion --|> Item
+Submarino --|> Item
+Vehículo --|> Item
+Elefante --|> Item
+Taladro --|> Item
+Prisionero --|> Item
+Comida --|> Item
+Medalla --|> Item
+Tanquedegasolina --|> Item
+CajasdeMunicion --|> Item
 @enduml
