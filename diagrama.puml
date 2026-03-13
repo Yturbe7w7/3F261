@@ -18,7 +18,7 @@ class Posion
 class Botiquin
 class Item
 class Personaje
-class Caja
+class Arma
 class CajaF
 class CajaS
 class CajaR
@@ -59,12 +59,9 @@ Eri "1" *-- "2" Vida
 Eri "1" o-- "1..*" Moneda
 Eri o-- Posion
 Eri o-- Botiquin
-Eri o-- Caja
-Eri "1" o-- "1..2" ThunderCloud
-Eri "1" o-- "1..5" Roca 
-Eri "1" o-- "1..3" Granada
-Eri "1" o-- "1..3" FireBomb
-Eri "1" o-- "1..4" Misiles 
+Eri o-- Arma
+Eri o-- CajaMunicion
+Eri "1" o-- "1..10" Bomba
 Eri o-- Vehiculo
 Eri "1" o-- "1..3" Tanquegasolina 
 Eri "1" o-- "1..*"  Prisionero 
@@ -75,12 +72,9 @@ Fio "1" *-- "2" Vida
 Fio "1" o-- "1..*" Moneda
 Fio o-- Posion
 Fio o-- Botiquin
-Fio o-- Caja
-Fio "1" o-- "1..2" ThunderCloud
-Fio "1" o-- "1..5" Roca 
-Fio "1" o-- "1..3" Granada
-Fio "1" o-- "1..3" FireBomb
-Fio "1" o-- "1..4" Misiles 
+Fio o-- Arma
+Fio o-- CajaMunicion
+Fio "1" o-- "1..10" Bomba
 Fio o-- Vehiculo
 Fio "1" o-- "1..3" Tanquegasolina
 Fio "1" o-- "1..*"  Prisionero 
@@ -89,20 +83,20 @@ Fio "1" o-- "1..*"  Medalla
 Moneda --|> Item
 Posion --|> Item
 Botiquin --|> Item
-Caja --|> Item
-CajaF --|> Caja
-CajaS --|> Caja
-CajaR --|> Caja
-CajaH --|> Caja
-CajaL --|> Caja
-CajaC --|> Caja
-CajaI --|> Caja
-CajaD --|> Caja
-CajaG --|> Caja
-Caja2H --|> Caja
-CajaZ --|> Caja
-CajaT --|> Caja
-CajaB --|> Caja
+Arma --|> Item
+CajaF --|> Arma
+CajaS --|> Arma
+CajaR --|> Arma
+CajaH --|> Arma
+CajaL --|> Arma
+CajaC --|> Arma
+CajaI --|> Arma
+CajaD --|> Arma
+CajaG --|> Arma
+Caja2H --|> Arma
+CajaZ --|> Arma
+CajaT --|> Arma
+CajaB --|> Arma
 Bomba --|> Item
 ThunderCloud --|> Bomba
 Roca --|> Bomba
@@ -123,5 +117,5 @@ Prisionero --|> Item
 Comida --|> Item
 Medalla --|> Item
 Tanquegasolina --|> Item
-CajaMunicion --|> Caja
+CajaMunicion --|> Item
 @enduml
